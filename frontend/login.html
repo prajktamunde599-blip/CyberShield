@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CyberShield</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="auth-shell">
+        <section class="auth-brand">
+            <div class="mark" aria-hidden="true">CS</div>
+            <h1>CyberShield</h1>
+            <p>
+                Sign in to continue learning. The server checks your
+                password hash and returns a JWT. The browser stores that
+                token and sends it on protected requests.
+            </p>
+        </section>
+
+        <section class="auth-form-wrap">
+            <form class="card" id="login-form" novalidate>
+                <h2>Log in</h2>
+                <p class="lede">Use the account you created on the register page.</p>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required>
+                </div>
+
+                <button type="submit" id="login-button">Log in</button>
+                <p class="status" id="status" role="status"></p>
+                <p class="hint">No account yet? <a href="register.html">Register</a></p>
+                <p class="hint">After login you will open the learner dashboard.</p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/authStorage.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

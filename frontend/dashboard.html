@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CyberShield</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="app-brand">
+            <div class="mark" aria-hidden="true">CS</div>
+            <span>CyberShield</span>
+        </div>
+        <div class="app-user">
+            <span id="header-username">Loading...</span>
+            <button type="button" class="btn-logout" id="logout-button">Log out</button>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <section class="welcome">
+            <h1 id="welcome-title">Dashboard</h1>
+            <p id="welcome-text">Loading your profile from the server...</p>
+        </section>
+
+        <section class="profile-grid" aria-label="Account summary">
+            <article class="panel">
+                <span class="label">Username</span>
+                <p class="value" id="profile-username">—</p>
+            </article>
+            <article class="panel">
+                <span class="label">Email</span>
+                <p class="value" id="profile-email">—</p>
+            </article>
+            <article class="panel">
+                <span class="label">Role</span>
+                <p class="value"><span class="badge" id="profile-role">—</span></p>
+            </article>
+        </section>
+
+        <section class="feature-grid" aria-label="Learning areas">
+            <article class="panel">
+                <h3>Learning topics</h3>
+                <p class="coming-soon">Coming next — not built yet</p>
+            </article>
+            <article class="panel">
+                <h3>Quizzes</h3>
+                <p class="coming-soon">Coming later — scored on the server</p>
+            </article>
+            <article class="panel">
+                <h3>Progress and badges</h3>
+                <p class="coming-soon">Coming later</p>
+            </article>
+            <article class="panel">
+                <h3>Awareness scenarios</h3>
+                <p class="coming-soon">Coming later — no real credentials collected</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/authStorage.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

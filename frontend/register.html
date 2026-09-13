@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CyberShield</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="auth-shell">
+        <section class="auth-brand">
+            <div class="mark" aria-hidden="true">CS</div>
+            <h1>CyberShield</h1>
+            <p>
+                Create a learner account to start cybersecurity lessons,
+                quizzes, and awareness training. Passwords are hashed on
+                the server and never stored in plain text.
+            </p>
+        </section>
+
+        <section class="auth-form-wrap">
+            <form class="card" id="register-form" novalidate>
+                <h2>Create account</h2>
+                <p class="lede">Normal user registration. Admin access is not self-assigned.</p>
+
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text" autocomplete="username" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password">Confirm password</label>
+                    <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+                </div>
+
+                <button type="submit" id="register-button">Register</button>
+                <p class="status" id="status" role="status"></p>
+                <p class="hint">Already have an account? <a href="login.html">Log in</a></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
